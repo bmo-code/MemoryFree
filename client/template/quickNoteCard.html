@@ -1,0 +1,24 @@
+<template name="quickNoteCard">
+	<div class="templateContainer">
+		{{> addQuickNote}}
+		{{> quickNote}}
+	</div>
+</template>
+
+<template name="addQuickNote">
+	<div class="divQuickNoteContainer">
+		<div class="quickNoteColorIndicator"></div>
+		<input type="text" id="iptQuickNote">
+		<div class="divAddQuickNote" id="divAddQuickNote"></div>
+	</div>
+</template>
+
+<template name="quickNote">
+	{{#each quickNotes}}
+	<div class="divQuickNoteContainer" id="quickNoteContainer" data-id="{{_id}}">
+		<div class="quickNoteColorIndicator"></div>
+		<label class="lblQuickNote">{{ text }}</label>
+		<div class="divDoneQuickNote" id="divDoneQuickNote"></div>
+	</div>
+	{{/each}}
+</template>

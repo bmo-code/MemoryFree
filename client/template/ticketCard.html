@@ -1,0 +1,47 @@
+<template name="ticketCard">
+    <div class="templateContainer">
+        {{> ticketAdd }}
+        {{> ticketItem }}
+    </div>
+</template>
+
+<template name="ticketAdd">
+    <div class="divTicketContainer nopadding">
+        <div class="row nomargin">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 divTicketHeaderIndex nopadding backgroundColorGray">
+                
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 divTicketHeaderCategory nopadding">
+                Categorie
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 divTicketHeaderType nopadding">
+                Type
+            </div>
+        </div>
+        <div class="divTicketContent">
+            <textarea id="inputTicketContent" rows="2" class="iptTicketContent" type="text" placeholder="Description"></textarea>
+        </div>
+        <button id="btnAddTicket" class="btnAddTicket">Enregistrer le ticket</button>
+    </div>
+</template>
+
+<template name="ticketItem">
+{{#each tickets}}
+  <div class="divTicketContainer nopadding">
+      <div class="row rowTicketHeader nomargin">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 divTicketHeaderIndex nopadding">
+              23
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 divTicketHeaderCategory nopadding">
+              Categorie
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 divTicketHeaderType nopadding">
+              Type
+          </div>
+      </div>
+      <div class="divTicketContent">
+          <textarea class="iptTicketContent" disabled="true">{{text}}</textarea>
+      </div>
+  </div>
+  {{/each}}
+</template>

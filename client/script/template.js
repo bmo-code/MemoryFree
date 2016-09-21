@@ -4,16 +4,6 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
 
 /*
-    
-    ACCOUNTS CONFIG
-
-*/
-
-Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_AND_EMAIL'
-});
-
-/*
 
     TICKET TEMPLATE
 

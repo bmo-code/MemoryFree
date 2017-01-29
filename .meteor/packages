@@ -23,3 +23,9 @@ insecure@1.0.7                # Allow all DB writes from clients (for prototypin
 twbs:bootstrap
 accounts-ui@1.1.9
 accounts-password@1.3.0
+fullcalendar:fullcalendar
+momentjs:moment
+session
+check
+audit-argument-checks
+aldeed:collection2
